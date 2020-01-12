@@ -1,0 +1,22 @@
+footer{
+    background: $color_gray;
+
+    p{
+        text-align: center;
+        padding: 30px 0;
+        color: $color_light_gray;
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 0;
+
+        a{
+            color: #aaa;
+            transition: 0.3s;
+            &:hover{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}

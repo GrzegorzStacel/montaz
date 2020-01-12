@@ -1,0 +1,95 @@
+#blog {
+    padding: 80px 0;
+    background: #f2f6f9;
+
+    .blog_single {
+        background: #fff;
+
+        .blog_images {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            .blog_date {
+                position: absolute;
+                top: 10%;
+                left: 4%;
+
+                .date,
+                .month {
+                    display: inline-block;
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    text-align: center;
+
+                }
+
+                .date {
+                    background: #fff;
+                    padding: 5px 15px;
+                    color: #1d293e;
+                    border-radius: 3px 0 0 3px;
+                    float: left;
+                }
+
+                .month {
+                    padding: 5px 20px;
+                    background: #f54336;
+                    color: #fff;
+                    border-radius: 0 3px 3px 0;
+                }
+            }
+        }
+
+        .blog_content{
+            padding: 30px;
+            text-align: left;
+            text-transform: none;
+            h3{
+                margin: 0 0 10px;
+                text-transform: none;
+                line-height: 27px;
+                a{
+                    font-size: 20px;
+                    color: #1d293e;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+            }
+
+            p{
+                margin-bottom: 20px;
+            }
+
+            .blog_link{
+                text-decoration: none;
+                text-transform: capitalize;
+                color: #1d293e;
+                font-size: 15px;
+                font-weight: 600;
+                position: relative;
+                transition: 0.2s linear;
+                
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 30%;
+                    display: block;
+                    border: 1px solid #f54336;
+                    transition: 0.3s ease;
+                }
+
+                &:hover{
+                    color: #f54336;
+
+                    &:after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

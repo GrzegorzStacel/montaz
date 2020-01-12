@@ -1,0 +1,71 @@
+#services {
+  text-transform: capitalize;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#services .services_title {
+  margin-bottom: 60px;
+}
+
+#services .services_title h1 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+#services .services_title p {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#services .services_single {
+  margin: 0 0 30px;
+  padding: 60px 30px;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0 40px rgba(0, 0, 0, 0.07);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+#services .services_single .about_icon {
+  margin: 0 auto 20px;
+}
+
+#services .services_single .content {
+  margin: 0 auto;
+}
+
+#services .services_single .content h3 {
+  margin: 0 0 15px 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#services .services_single .content p {
+  text-transform: none;
+  margin: 0 0 20px 0;
+}
+
+#services .services_single .content a {
+  margin: 0 auto;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+}
+
+#services .services_single .content a:hover {
+  color: #f54336;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+#services .services_single:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+/*# sourceMappingURL=services.css.map */

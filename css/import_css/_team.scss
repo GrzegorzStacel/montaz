@@ -1,0 +1,75 @@
+#team {
+    padding: 80px 0 60px;
+    background: #f2f6f9;
+
+    .team_single{
+        text-align: center;
+        background: #fff;
+        padding: 20px;
+        margin: 0 15px;
+
+        img{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 0 25px;
+        }
+
+        h4{
+            font-size: 18px;
+            color: #1d293e;
+        }
+
+        h5{
+            color: #888;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        i{
+            margin: 0 5px;
+            transition: 0.3s;
+        }
+        i:hover{
+            color:#f54336;
+        }
+    }    
+}
+
+#projects {
+    padding: 80px 0;
+    background: #fff;
+
+    .pricing_single_project {
+        background: #f2f6f9;
+        margin: 0 0 30px;
+        padding: 20px;
+        text-align: center;
+
+        h2 {
+            font-size: 50px;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: 400;
+        }        
+    }
+
+    .partner_top{
+        margin-top: 50px;
+    }
+
+    .partner {
+        text-align: center;
+        margin-top: 30px;
+
+        img{
+            padding: 0 10px;
+            width: 100%;
+        }
+    }
+}
+

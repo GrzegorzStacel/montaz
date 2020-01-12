@@ -1,0 +1,170 @@
+$font_poppins: 'Poppins',
+sans-serif;
+$font_nunito: 'Nunito';
+$color_gray: #1d293e;
+$color_light_gray: #8a99b3;
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,400,500,600,700&display=swap);
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #444;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+@import 'import_css/nav';
+@import 'media/nav_@media';
+
+@import 'import_css/about'; // about 1 and 2
+@import 'import_css/_services';
+@import 'import_css/_promotion';
+@import 'import_css/_portfolio';
+@import 'import_css/_team'; // and projects
+@import 'import_css/_pricing';
+@import 'import_css/_testimonial';
+@import 'import_css/_blog';
+@import 'import_css/_contact';
+@import 'import_css/_address';
+@import 'import_css/_footer';
+
+
+
+
+
+
+
+
+
+.section_title {
+    margin-bottom: 60px;
+    text-align: center;
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin: 0;
+
+    }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito', sans-serif;
+    color: #1d293e;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.button_left,
+.button_right {
+    font-size: 15px;
+    color: #fff;
+
+
+    display: inline-block;
+    color: #fff;
+    margin: 0 20px 20px 0;
+    padding: 10px 45px;
+    border-radius: 30px;
+    text-decoration: none;
+
+}
+
+
+.button_left {
+    background: #1d293e;
+    border: 2px solid #1d293e;
+
+    &:hover {
+        background: #fff;
+        color: #1d293e;
+        border-color: #fff;
+        transform: scale(0.94);
+        text-decoration: none;
+
+    }
+}
+
+.button_right {
+    background: #f54336;
+    border: 2px solid #f54336;
+    margin-top: 40px;
+
+    &:hover {
+        background: #fff;
+        color: #2b2b2b;
+        border-color: #fff;
+        transform: scale(0.94);
+        text-decoration: none;
+    }
+}
+
+#home {
+
+    .hamburger {
+        i {
+            font-size: 30px;
+            color: #000;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(0.98);
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1366px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1024px) {
+    #about{
+        
+    }
+}
+
+// @media (min-width: 800px) {
+    
+// }
+
+@media (max-width: 800px) {
+    
+}
+
+
+@media (max-width: 480px) {
+
+
+}

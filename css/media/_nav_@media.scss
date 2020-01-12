@@ -1,0 +1,135 @@
+@media (max-width: 1024px) {
+    #home {
+
+        .links {
+            a {
+                padding: 6px;
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    #home {
+
+        .hamburger {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #home {
+        z-index: 10;
+        position: relative;
+
+        .stick_container {
+            background: #fff;
+            position: fixed;
+
+            .container_nav {
+                height: auto;
+                display: block;
+                text-align: left;
+                margin: 0;
+                padding: 25px;
+
+                &>a {
+                    position: absolute;
+                    top: 0;
+                    z-index: 2;
+                }
+
+                .hamburger {
+                    position: absolute;
+                    top: 15px;
+                    right: 50px;
+                    z-index: 2;
+                }
+
+                .links {
+                    z-index: 1;
+                    opacity: 0;
+                    transform: translate3d(0, 10%, 0);
+                    pointer-events: none;
+                    margin-top: 50px;
+                    transition: 0.3s;
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    background: #fff;
+                    padding: 0 3.3vw;
+
+                    a {
+                        display: block;
+                        width: 100%;
+                        // color: #666;
+                        color: #000;
+                        font-size: 3vw;
+                        text-align: center;
+                        padding: 3vh 1vh;
+                        border-top: 1px solid #ccc;
+                        height: auto;
+
+                        // &:hover{
+                        //     // color: red;
+                        // }
+                    }
+
+                }
+            }
+        }
+
+        &.mobile {
+            .stick_container .container_nav .links {
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+                pointer-events: visible;
+            }
+        }
+
+        .nav_content {
+            h5 {
+                font-size: 3vw;
+            }
+
+            h1 {
+                font-size: 7.5vw;
+            }
+
+            p {
+                font-size: 2vw;
+            }
+
+
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    #home {
+        background-image: url(../images/background/bg_w480_compressed.jpg);
+        .nav_content {
+            h5 {
+                font-size: 4vw;
+            }
+
+            h1 {
+                font-size: 8.5vw;
+            }
+
+            p {
+                font-size: 3vw;
+            }
+
+            a {
+                padding: 10px 15px;
+                margin: 0;
+                margin-right: 10px;
+                font-size: 5vw;
+            }
+        }
+    }
+}
