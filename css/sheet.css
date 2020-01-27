@@ -755,14 +755,18 @@ p {
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  height: 45vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 448px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
 }
 
 #contact_promotion:before {
@@ -775,37 +779,86 @@ p {
   background: rgba(0, 0, 0, 0.65);
 }
 
-#contact_promotion .contact_promotion_content {
+#contact_promotion .promotion_container {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+#contact_promotion .promotion_container .contact_promotion_content {
   color: #fff;
   text-align: center;
   text-transform: capitalize;
 }
 
-#contact_promotion .contact_promotion_content h1, #contact_promotion .contact_promotion_content h3 {
+#contact_promotion .promotion_container .contact_promotion_content h1,
+#contact_promotion .promotion_container .contact_promotion_content h3 {
   color: #fff;
 }
 
-#contact_promotion .contact_promotion_content h1 {
+#contact_promotion .promotion_container .contact_promotion_content h1 {
   font-size: 46px;
   line-height: 60px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-#contact_promotion .contact_promotion_content h3 {
+#contact_promotion .promotion_container .contact_promotion_content h3 {
   font-size: 18px;
   font-weight: 400;
 }
 
-#contact_promotion .contact_promotion_content .button_right {
+#contact_promotion .promotion_container .contact_promotion_content .button_right {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin-top: 40px;
 }
 
-#contact_promotion .contact_promotion_content .button_right:hover {
+#contact_promotion .promotion_container .contact_promotion_content .button_right:hover {
   background: #1d293e;
   border: 2px solid #1d293e;
   color: #fff;
+}
+
+@media (max-width: 800px) {
+  #contact_promotion .promotion_container .contact_promotion_content h1 {
+    font-size: 37px;
+    line-height: 50px;
+  }
+  #contact_promotion .promotion_container .contact_promotion_content h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  #contact_promotion .promotion_container .contact_promotion_content h1 {
+    font-size: 31px;
+  }
+  #contact_promotion .promotion_container .contact_promotion_content h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 355px) {
+  #contact_promotion .promotion_container .contact_promotion_content h1 {
+    font-size: 30px;
+    line-height: 43px;
+  }
+  #contact_promotion .promotion_container .contact_promotion_content h3 {
+    font-size: 14px;
+  }
+  #contact_promotion .promotion_container .contact_promotion_content .button_right {
+    padding: 11px 45px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 345px) {
+  #contact_promotion .promotion_container .contact_promotion_content h1 {
+    font-size: 28px;
+  }
+  #contact_promotion .promotion_container .contact_promotion_content .button_right {
+    padding: 5px 45px;
+  }
 }
 
 #portfolio {
