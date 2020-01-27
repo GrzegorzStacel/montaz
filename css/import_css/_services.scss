@@ -1,50 +1,62 @@
 #services {
     padding: 80px 0;
     text-align: center;
-
-    .services_single {
-        text-transform: capitalize;
-        margin: 0 0 30px;
-        padding: 60px 30px;
-        box-shadow: 0 0 40px rgba(0, 0, 0, 0.07);
-        transition: 0.3s linear;
-
-        .about_icon {
-            margin: 0 auto 20px;
+    margin: 0 10vw;
+    
+    .services_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .section_title {
+            flex-basis: 90%;
         }
 
-        .content {
-            margin: 0 auto;
+        .services_single {
+            text-transform: capitalize;
+            margin: 0 0 30px;
+            padding: 60px 30px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.07);
+            transition: 0.3s linear;
+            flex-basis: 30%;
+            margin: 10px;
 
-            h3{
-                margin: 0 0 15px 0;
-                font-weight: 600;
-                font-size: 20px;
+            .about_icon {
+                margin: 0 auto 20px;
             }
 
-            p {
-                text-transform: none;
-                margin: 0 0 20px 0;
-            }
-
-            a {
+            .content {
                 margin: 0 auto;
-                color: #000;
-                text-decoration: none;
-                font-weight: 600;
-                transition: 0.4s linear;
 
-                &:hover{
-                    color: #f54336;
-                    transition: 0.2s linear;
+                h3 {
+                    margin: 0 0 15px 0;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+
+                p {
+                    text-transform: none;
+                    margin: 0 0 20px 0;
+                }
+
+                a {
+                    margin: 0 auto;
+                    color: #000;
+                    text-decoration: none;
+                    font-weight: 600;
+                    transition: 0.4s linear;
+
+                    &:hover {
+                        color: #f54336;
+                        transition: 0.2s linear;
+                    }
                 }
             }
-        }
 
-        &:hover{
-            transform: scale(1.03);
-            transition: 0.2s linear;
+            &:hover {
+                transform: scale(1.03);
+                transition: 0.2s linear;
+            }
         }
     }
-
 }

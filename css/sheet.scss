@@ -36,10 +36,11 @@ p {
 @import 'media/nav_@media';
 
 @import 'import_css/about'; // about 1 and 2
-@import 'import_css/media/_about_@media'; // about 1 and 2
-
+@import 'media/_about_@media'; // about 1 and 2
 
 @import 'import_css/_services';
+@import 'media/services_@media';
+
 @import 'import_css/_promotion';
 @import 'import_css/_portfolio';
 @import 'import_css/_team'; // and projects
@@ -49,13 +50,6 @@ p {
 @import 'import_css/_contact';
 @import 'import_css/_address';
 @import 'import_css/_footer';
-
-
-
-
-
-
-
 
 
 .section_title {
@@ -129,7 +123,6 @@ h6 {
 }
 
 #home {
-
     .hamburger {
         i {
             font-size: 30px;
@@ -142,13 +135,5 @@ h6 {
         }
     }
 }
-
-
-
-
-
-
-
-
 
 

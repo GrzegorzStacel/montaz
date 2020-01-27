@@ -1,0 +1,30 @@
+@media(max-width: 1024px){
+    #services{
+        .services_container{
+            .services_single{
+                flex-basis: 47%;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 860px){
+    #services{
+        .services_container{
+            .services_single{
+                flex-basis: 44%;
+            }
+        }
+    }
+}
+
+@media(max-width: 600px){
+    #services{
+        .services_container{
+            .services_single{
+                flex-basis: auto;
+            }
+        }
+    }
+}
