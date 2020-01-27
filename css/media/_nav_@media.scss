@@ -1,24 +1,111 @@
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
     #home {
+        .stick_container {
+            .container_nav {
+                .links {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
 
-        .links {
-            a {
-                padding: 6px;
+        .nav_content {
+            h5 {
+                font-size: 1.9vw;
+            }
+
+            h1 {
+                font-size: 4vw;
+            }
+
+            p {
+                font-size: 1.1vw;
+            }
+
+            .buttons {
+                margin-top: 60px;
+
+                .button_left,
+                .button_right {
+                    padding: 10px;
+                }
             }
         }
     }
 }
 
-@media (min-width: 800px) {
+@media (max-width: 1280px) {
     #home {
+        .stick_container {
+            .container_nav {
+                .links {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
 
+        .nav_content {
+            p {
+                font-size: 1.2vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    #home {
+        .stick_container {
+            .container_nav {
+                .links {
+                    a {
+                        font-size: 1.6vw;
+                        padding: 6px;
+                    }
+                }
+            }
+        }
+
+        .nav_content {
+            h5 {
+                font-size: 2.2vw;
+            }
+
+            h1 {
+                font-size: 6vw;
+            }
+
+            p {
+                font-size: 1.7vw;
+            }
+
+            .buttons {
+                margin-top: 60px;
+
+                a {
+                    font-size: 2.5vw;
+                }
+                .button_left,
+                .button_right {
+                    width: 150px;
+                    // padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 801px) {
+    #home {
         .hamburger {
             display: none;
         }
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px){
     #home {
         z-index: 10;
         position: relative;
@@ -52,10 +139,11 @@
                     opacity: 0;
                     transform: translate3d(0, 10%, 0);
                     pointer-events: none;
-                    margin-top: 50px;
+                    margin-top: 35px;
                     transition: 0.3s;
                     position: absolute;
                     width: 100%;
+                    // height: 100vh;
                     left: 0;
                     background: #fff;
                     padding: 0 3.3vw;
@@ -63,19 +151,17 @@
                     a {
                         display: block;
                         width: 100%;
-                        // color: #666;
-                        color: #000;
+                        color: #666;
                         font-size: 3vw;
                         text-align: center;
                         padding: 3vh 1vh;
                         border-top: 1px solid #ccc;
                         height: auto;
 
-                        // &:hover{
-                        //     // color: red;
-                        // }
+                        &:hover {
+                            color: red;
+                        }
                     }
-
                 }
             }
         }
@@ -89,46 +175,158 @@
         }
 
         .nav_content {
+            padding-top: 350px;
+
             h5 {
-                font-size: 3vw;
+                font-size: 15px;
             }
 
             h1 {
-                font-size: 7.5vw;
+                font-size: 38px;
             }
 
             p {
-                font-size: 2vw;
+                font-size: 11px;
             }
 
-
+            .buttons {
+                .button_left,
+                .button_right {
+                    font-size: 20px;
+                }
+            }
         }
     }
 }
 
-
 @media (max-width: 480px) {
 
     #home {
-        background-image: url(../images/background/bg_w480_compressed.jpg);
+        .stick_container {
+            padding: 5px 0;
+
+            .container_nav {
+                .links {
+                    a {
+                        font-size: 5vw;
+                    }
+                }
+
+                .hamburger{
+                    right: 25px;
+
+                    i{
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+
         .nav_content {
+            padding-top: 150px;
+
             h5 {
-                font-size: 4vw;
+                font-size: 15px;
             }
 
             h1 {
-                font-size: 8.5vw;
+                font-size: 38px;
             }
 
             p {
-                font-size: 3vw;
+                font-size: 11px;
             }
 
             a {
                 padding: 10px 15px;
                 margin: 0;
                 margin-right: 10px;
-                font-size: 5vw;
+                font-size: 5vh;
+            }
+
+
+            .buttons {
+                margin-top: 60px;
+                flex-direction: column;
+
+                .button_left {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 400px){
+    #home{
+        .stick_container{
+            .container_nav{
+                .hamburger{
+                    right: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (orientation: landscape) and (max-width: 920px){
+    #home {
+        .stick_container {
+            padding: 5px 0;
+            .container_nav {
+                .links {
+                    a {
+                        font-size: 1.6vw;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+
+        .nav_content {
+            padding-top: 110px;
+
+            h5 {
+                font-size: 15px;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            p {
+                font-size: 11px;
+                margin-bottom: 10px;
+            }
+
+            .buttons {
+                margin-top: -10px;
+
+                a {
+                    font-size: 2.5vw;
+                }
+                .button_left,
+                .button_right {
+                    width: 130px;
+                    padding: 7px;
+                }
+            }
+        }
+    }
+}
+
+@media (orientation: landscape) and (max-width: 800){
+    #home{
+        .stick_container{
+            .container_nav{
+                .links{
+                    margin-top: 30px;
+
+                    a{
+                        padding: 5px;
+                    }
+                }
             }
         }
     }

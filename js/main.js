@@ -34,11 +34,10 @@ function stick_menu() {
 
         if (position > 100) {
             $('nav .stick_container').addClass('sticked').slideDown();
-            $('#home .links').css('margin-top', '35px')
+            // $('#home .links').css('margin-top', '35px')
         } else {
             $('nav .stick_container').removeClass('sticked');
-            $('#home .links').css('margin-top', '50px')
-
+            // $('#home .links').css('margin-top', '50px')
         }
     })
 }
