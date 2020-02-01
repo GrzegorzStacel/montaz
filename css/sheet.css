@@ -865,16 +865,26 @@ p {
   padding: 80px 0;
 }
 
-#portfolio .container-fluid {
-  padding: 0;
+#portfolio .portfolio_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#portfolio .portfolio_title {
+#portfolio .portfolio_container .section_title {
   text-align: center;
   margin: 0 0 60px;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  height: auto;
 }
 
-#portfolio .portfolio_title h1 {
+#portfolio .portfolio_container .section_title h1 {
   text-transform: capitalize;
   margin-bottom: 15px;
   font-weight: 700;
@@ -882,15 +892,20 @@ p {
   color: #1d293e;
 }
 
-#portfolio .portfolio_single {
+#portfolio .portfolio_container .portfolio_single {
   position: relative;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-#portfolio .portfolio_single img {
+#portfolio .portfolio_container .portfolio_single img {
   width: 100%;
 }
 
-#portfolio .portfolio_single .portfolio_single_wrap {
+#portfolio .portfolio_container .portfolio_single .portfolio_single_wrap {
   display: none;
   color: #fff;
   text-align: center;
@@ -901,13 +916,13 @@ p {
           transform: translate(-50%, -50%);
 }
 
-#portfolio .portfolio_single .portfolio_single_wrap p {
+#portfolio .portfolio_container .portfolio_single .portfolio_single_wrap p {
   margin: 0 0 10px;
   -webkit-animation: fadeInDown 500ms ease-in-out;
           animation: fadeInDown 500ms ease-in-out;
 }
 
-#portfolio .portfolio_single .portfolio_single_wrap h4 {
+#portfolio .portfolio_container .portfolio_single .portfolio_single_wrap h4 {
   font-size: 20px;
   font-family: "Nunito", sans-serif;
   margin: 0 0 21px;
@@ -919,7 +934,7 @@ p {
           animation: fadeInDown 300ms ease-in-out;
 }
 
-#portfolio .portfolio_single .portfolio_single_wrap .portfolio_single_wrap_links a {
+#portfolio .portfolio_container .portfolio_single .portfolio_single_wrap .portfolio_single_wrap_links a {
   position: relative;
   visibility: hidden;
   -webkit-animation: slideInUp 100ms ease-in-out;
@@ -930,11 +945,11 @@ p {
           animation-fill-mode: forwards;
 }
 
-#portfolio .portfolio_single .portfolio_single_wrap .portfolio_single_wrap_links a:first-child {
+#portfolio .portfolio_container .portfolio_single .portfolio_single_wrap .portfolio_single_wrap_links a:first-child {
   margin: 0 16px 0 0;
 }
 
-#portfolio .portfolio_single .portfolio_single_wrap .portfolio_single_wrap_links a i {
+#portfolio .portfolio_container .portfolio_single .portfolio_single_wrap .portfolio_single_wrap_links a i {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -942,7 +957,7 @@ p {
           transform: translate(-50%, -50%);
 }
 
-#portfolio .portfolio_single:before {
+#portfolio .portfolio_container .portfolio_single:before {
   content: '';
   position: absolute;
   left: 0;
@@ -955,11 +970,11 @@ p {
           transform: scale(0);
 }
 
-#portfolio .portfolio_single:hover .portfolio_single_wrap {
+#portfolio .portfolio_container .portfolio_single:hover .portfolio_single_wrap {
   display: block;
 }
 
-#portfolio .portfolio_single:hover:before {
+#portfolio .portfolio_container .portfolio_single:hover:before {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
@@ -968,7 +983,8 @@ p {
 }
 
 .button_portfolio {
-  display: block;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   padding: 0;
   border: none;
   padding-top: 60px;
@@ -1066,6 +1082,34 @@ p {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
     visibility: visible;
+  }
+}
+
+@media (max-width: 1024px) {
+  #portfolio .portfolio_container .portfolio_single {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (max-width: 680px) {
+  #portfolio .portfolio_container .portfolio_single {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  #portfolio .portfolio_container .portfolio_single .portfolio_single_wrap h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  #portfolio .portfolio_container .portfolio_single .portfolio_single_wrap p {
+    font-size: 14px;
+  }
+  .button_circle_sm {
+    width: 38px;
+    height: 38px;
   }
 }
 
