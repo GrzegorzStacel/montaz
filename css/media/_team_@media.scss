@@ -1,0 +1,82 @@
+@media(max-width: 1180px) {
+    #projects {
+        .container_pricing {
+            .pricing_single_project {
+                h3 {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    #projects {
+        .container_pricing {
+            .pricing_single_project {
+                flex-basis: 48%;
+            }
+        }
+
+        .container_partners {
+            flex-wrap: wrap;
+
+            .partner {
+                flex-basis: 33%;
+            }
+        }
+    }
+}
+
+@media(max-width: 770px) {
+    #team {
+        .section_title {
+            margin: 0 120px 60px 120px;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+        }
+    }
+}
+
+@media(max-width: 550px) {
+    #team {
+        .section_title {
+            margin: 0 50px 60px 50px;
+
+            h1 {
+                font-size: 27px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+        }
+    }
+
+    #projects {
+        .container_pricing {
+            .pricing_single_project {
+                flex-basis: 100%;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 400px) {
+    #projects {
+        .container_partners {
+            .partner {
+                flex-basis: 50%;
+            }
+        }
+    }
+}

@@ -1157,37 +1157,128 @@ p {
 #projects {
   padding: 80px 0;
   background: #fff;
+  margin: 0 10vw;
 }
 
-#projects .pricing_single_project {
+#projects .container_pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#projects .container_pricing .section_title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+#projects .container_pricing .pricing_single_project {
   background: #f2f6f9;
   margin: 0 0 30px;
   padding: 20px;
   text-align: center;
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  height: 130px;
 }
 
-#projects .pricing_single_project h2 {
+#projects .container_pricing .pricing_single_project h2 {
   font-size: 50px;
 }
 
-#projects .pricing_single_project h3 {
+#projects .container_pricing .pricing_single_project h3 {
   font-size: 16px;
   margin-top: 10px;
   font-weight: 400;
 }
 
-#projects .partner_top {
-  margin-top: 50px;
+#projects .container_partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#projects .partner {
+#projects .container_partners .partner {
   text-align: center;
   margin-top: 30px;
+  -ms-flex-preferred-size: 17%;
+      flex-basis: 17%;
 }
 
-#projects .partner img {
+#projects .container_partners .partner img {
   padding: 0 10px;
   width: 100%;
+}
+
+@media (max-width: 1180px) {
+  #projects .container_pricing .pricing_single_project h3 {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  #projects .container_pricing .pricing_single_project {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  #projects .container_partners {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #projects .container_partners .partner {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+}
+
+@media (max-width: 770px) {
+  #team .section_title {
+    margin: 0 120px 60px 120px;
+  }
+  #team .section_title h1 {
+    font-size: 30px;
+  }
+  #team .section_title p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  #team .section_title {
+    margin: 0 50px 60px 50px;
+  }
+  #team .section_title h1 {
+    font-size: 27px;
+  }
+  #team .section_title p {
+    font-size: 15px;
+  }
+  #projects .container_pricing .pricing_single_project {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  #projects .container_partners .partner {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 #pricing {

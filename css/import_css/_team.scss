@@ -2,13 +2,13 @@
     padding: 80px 0 60px;
     background: #f2f6f9;
 
-    .team_single{
+    .team_single {
         text-align: center;
         background: #fff;
         padding: 20px;
         margin: 0 15px;
 
-        img{
+        img {
             display: inline-block;
             width: 150px;
             height: 150px;
@@ -16,60 +16,81 @@
             margin: 0 0 25px;
         }
 
-        h4{
+        h4 {
             font-size: 18px;
             color: #1d293e;
         }
 
-        h5{
+        h5 {
             color: #888;
             font-size: 16px;
             font-weight: 400;
         }
 
-        i{
+        i {
             margin: 0 5px;
             transition: 0.3s;
         }
-        i:hover{
-            color:#f54336;
+
+        i:hover {
+            color: #f54336;
         }
-    }    
+    }
 }
 
 #projects {
     padding: 80px 0;
     background: #fff;
+    margin: 0 10vw;
 
-    .pricing_single_project {
-        background: #f2f6f9;
-        margin: 0 0 30px;
-        padding: 20px;
-        text-align: center;
+    .container_pricing {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-        h2 {
-            font-size: 50px;
+        .section_title {
+            flex-basis: 100%;
         }
 
-        h3 {
-            font-size: 16px;
-            margin-top: 10px;
-            font-weight: 400;
-        }        
+        .pricing_single_project {
+            background: #f2f6f9;
+            margin: 0 0 30px;
+            padding: 20px;
+            text-align: center;
+            flex-basis: 23%;
+            height: 130px;
+
+
+            h2 {
+                font-size: 50px;
+            }
+
+            h3 {
+                font-size: 16px;
+                margin-top: 10px;
+                font-weight: 400;
+            }
+        }
     }
 
-    .partner_top{
-        margin-top: 50px;
-    }
+    // .partner_top {
+    //     margin-top: 50px;
+    // }
+    .container_partners {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
-    .partner {
-        text-align: center;
-        margin-top: 30px;
+        .partner {
+            text-align: center;
+            margin-top: 30px;
+            flex-basis: 17%;
 
-        img{
-            padding: 0 10px;
-            width: 100%;
+            img {
+                padding: 0 10px;
+                width: 100%;
+            }
         }
     }
 }
-
