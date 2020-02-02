@@ -6,9 +6,15 @@ $(document).ready(function () {
     pricing_button();
     hamburger_menu();
     paralax();
-
+    top_arrow();
 
 });
+
+function top_arrow() {
+    $('.arrow').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 1000, 'linear');
+    });
+}
 
 $(".owl-carousel").owlCarousel({
     loop: false,
@@ -34,10 +40,10 @@ function stick_menu() {
 
         if (position > 100) {
             $('nav .stick_container').addClass('sticked').slideDown();
-            // $('#home .links').css('margin-top', '35px')
+            $('.arrow').show(1000);
         } else {
             $('nav .stick_container').removeClass('sticked');
-            // $('#home .links').css('margin-top', '50px')
+            $('.arrow').hide(500);
         }
     })
 }
@@ -49,7 +55,6 @@ function hamburger_menu() {
 
     $('#home .links').on('click', 'a', () => {
         $('#home').toggleClass('mobile');
-        
     })
 }
 
@@ -86,10 +91,6 @@ function pricing_button() {
     })
 }
 
-
-
-
-
 function change_active_links_in_navbar() {
     var sections = $('.sections'),
         nav = $('nav .links'),
@@ -106,7 +107,7 @@ function change_active_links_in_navbar() {
             if (cur_pos >= top && cur_pos <= bottom) {
                 nav.find('a').removeClass('active');
                 sections.removeClass('active');
-
+                
                 $(this).addClass('active');
                 nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
             }
@@ -115,15 +116,16 @@ function change_active_links_in_navbar() {
 
     nav.find('#home .links a').on('click', function () {
         var $el = $(this),
-            id = $el.attr('href');
-
-        $('html, body').animate({
-            scrollTop: $(id).offset().top - nav_height
-        }, 500);
+        id = $el.attr('href');
+            
+            $('html, body').animate({
+                scrollTop: $(id).offset().top - nav_height,
+            }, 500);
 
         return false;
     });
 }
+
 
 function scroll_animate() {
     $('a[href^="#"]').on('click', function (event) {
@@ -134,7 +136,7 @@ function scroll_animate() {
             event.preventDefault();
             $('html, body').animate({
                 scrollTop: target.offset().top
-            }, 1500);
+            }, 1500, 'easeOutCirc');
         }
     });
 };
