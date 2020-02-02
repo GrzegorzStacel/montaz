@@ -1,0 +1,39 @@
+@media(max-width: 1024px){
+    #address {
+        .container_cont {
+            flex-direction: column;
+        }
+    }
+}
+
+@media(max-width: 600px){
+    #address {
+        margin: 0 2vh;
+    }
+}
+
+@media(max-width: 350px){
+    #address {
+        .container_cont {
+            .address_container{
+                .address_single{
+                    .address_icon {
+                        i{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+
+                    p{
+                        font-size: 14px;
+                    }
+                } 
+
+                .address_social{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

@@ -32,40 +32,6 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
-@import 'import_css/nav';
-@import 'media/nav_@media';
-
-@import 'import_css/about'; // about 1 and 2
-@import 'media/_about_@media'; // about 1 and 2
-
-@import 'import_css/_services';
-@import 'media/services_@media';
-
-@import 'import_css/_promotion';
-@import 'media/_promotion_@media';
-
-@import 'import_css/_portfolio';
-@import 'media/_portfolio_@media';
-
-@import 'import_css/_team'; // and projects
-@import 'media/_team_@media';
-
-@import 'import_css/_pricing';
-@import 'media/_pricing_@media';
-
-@import 'import_css/_testimonial';
-@import 'media/_testimonial_@media';
-
-@import 'import_css/_blog';
-@import 'media/_blog_@media';
-
-@import 'import_css/_contact';
-@import 'media/_contact_@media';
-
-@import 'import_css/_address';
-@import 'import_css/_footer';
-
-
 .section_title {
     margin-bottom: 60px;
     text-align: center;
@@ -149,5 +115,42 @@ h6 {
         }
     }
 }
+
+
+@import 'import_css/nav';
+@import 'media/nav_@media';
+
+@import 'import_css/about'; // about 1 and 2
+@import 'media/_about_@media'; // about 1 and 2
+
+@import 'import_css/_services';
+@import 'media/services_@media';
+
+@import 'import_css/_promotion';
+@import 'media/_promotion_@media';
+
+@import 'import_css/_portfolio';
+@import 'media/_portfolio_@media';
+
+@import 'import_css/_team'; // and projects
+@import 'media/_team_@media';
+
+@import 'import_css/_pricing';
+@import 'media/_pricing_@media';
+
+@import 'import_css/_testimonial';
+@import 'media/_testimonial_@media';
+
+@import 'import_css/_blog';
+@import 'media/_blog_@media';
+
+@import 'import_css/_contact';
+@import 'media/_contact_@media';
+
+@import 'import_css/_address';
+@import 'media/_address_@media';
+
+@import 'import_css/_footer';
+
 
 
