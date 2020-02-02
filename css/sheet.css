@@ -101,6 +101,40 @@ h6 {
           transform: scale(0.98);
 }
 
+.arrow i {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 18px;
+  color: #fff;
+  z-index: 10;
+  background: #1d293e;
+  border-radius: 30px;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 0 20px #fff;
+          box-shadow: 0 0 20px #fff;
+}
+
+.arrow:hover i {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: yellow;
+  font-size: 32px;
+}
+
 #home {
   background-image: url(../images/background/bg_w1920_compressed.jpg);
   background-size: cover;
@@ -261,6 +295,7 @@ h6 {
   #home .nav_content .buttons .button_left,
   #home .nav_content .buttons .button_right {
     padding: 10px;
+    font-size: 22px;
   }
 }
 
@@ -698,8 +733,14 @@ h6 {
 }
 
 @media (max-width: 480px) {
+  #about {
+    margin: 0 2vw;
+  }
   #about .section_title h1 {
     font-size: 4vh;
+  }
+  #about .about_container {
+    padding: 0 10px;
   }
   .about_two .single_about_two h4 {
     font-size: 16px;

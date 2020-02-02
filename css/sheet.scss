@@ -24,7 +24,7 @@ body {
     line-height: 26px;
 }
 
-body > *{
+body>* {
     box-sizing: border-box;
 }
 
@@ -109,13 +109,41 @@ h6 {
             color: #000;
             cursor: pointer;
 
-            &:hover{
+            &:hover {
                 transform: scale(0.98);
             }
         }
     }
 }
 
+.arrow {
+    i {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        font-size: 18px;
+        color: #fff;
+        z-index: 10;
+        background: #1d293e;
+        border-radius: 30px;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 0 20px #fff;
+    }
+
+    &:hover {
+        i{
+            transform: scale(1.1);
+            color: yellow;
+            font-size: 32px;
+        }
+    }
+}
 
 @import 'import_css/nav';
 @import 'media/nav_@media';
@@ -151,6 +179,3 @@ h6 {
 @import 'media/_address_@media';
 
 @import 'import_css/_footer';
-
-
-

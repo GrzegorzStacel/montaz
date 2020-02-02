@@ -63,10 +63,15 @@
 
 @media (max-width: 480px) {
     #about{
+        margin: 0 2vw;
         .section_title{
             h1{
                 font-size: 4vh;
             }
+        }
+        
+        .about_container{
+            padding: 0 10px;
         }
     }
 
