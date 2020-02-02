@@ -1,0 +1,36 @@
+@media(max-width: 1024px) {
+    #contact {
+        .contact_inside {
+            .contact-form {
+
+                .name_cl,
+                .email_cl {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 550px) {
+    #contact {
+        margin: 0 2vh;
+
+        .contact_inside {
+            padding: 15px;
+
+            .section_title {
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            .contact-form {
+                .actions {
+                    #submitButton {
+                        padding: 10px 20px;
+                    }
+                }
+            }
+        }
+    }
+}

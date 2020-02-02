@@ -1655,18 +1655,56 @@ p {
 
 #contact {
   padding: 80px 0;
+  margin: 0 10vh;
 }
 
 #contact .contact_inside {
   background: #f2f6f9;
   padding: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #contact .contact_inside .section_title h1 {
   font-size: 32px;
 }
 
-#contact .contact_inside .section_title:after {
+#contact .contact_inside .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact .contact_inside .contact-form .name_cl, #contact .contact_inside .contact-form .email_cl {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  margin-bottom: 20px;
+}
+
+#contact .contact_inside .contact-form .name_cl {
+  margin-right: auto;
+}
+
+#contact .contact_inside .contact-form .subject_cl {
+  margin-bottom: 20px;
+}
+
+#contact .contact_inside .contact-form #description {
+  margin-bottom: 20px;
+}
+
+#contact .contact_inside .contact-form .section_title:after {
   content: '';
   display: block;
   width: 50px;
@@ -1676,8 +1714,8 @@ p {
   background: #f54336;
 }
 
-#contact .contact_inside .form-control,
-#contact .contact_inside textarea {
+#contact .contact_inside .contact-form .form-control,
+#contact .contact_inside .contact-form textarea {
   border-radius: 30px;
   border-style: none none solid;
   -o-border-image: none;
@@ -1690,11 +1728,11 @@ p {
   font-family: sans-serif;
 }
 
-#contact .contact_inside .actions {
+#contact .contact_inside .contact-form .actions {
   text-align: center;
 }
 
-#contact .contact_inside .actions #submitButton {
+#contact .contact_inside .contact-form .actions #submitButton {
   background: #f54336;
   border: 2px solid #f54336;
   border-radius: 50px;
@@ -1713,9 +1751,33 @@ p {
   font-weight: 600;
 }
 
-#contact .contact_inside .actions #submitButton:hover {
+#contact .contact_inside .contact-form .actions #submitButton:hover {
   background: #1d293e;
   border-color: #1d293e;
+}
+
+@media (max-width: 1024px) {
+  #contact .contact_inside .contact-form .name_cl,
+  #contact .contact_inside .contact-form .email_cl {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  #contact {
+    margin: 0 2vh;
+  }
+  #contact .contact_inside {
+    padding: 15px;
+  }
+  #contact .contact_inside .section_title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  #contact .contact_inside .contact-form .actions #submitButton {
+    padding: 10px 20px;
+  }
 }
 
 #address .container_cont {
