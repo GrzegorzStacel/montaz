@@ -1,5 +1,6 @@
 #pricing {
     padding-bottom: 80px;
+    margin: 0 10vh;
 
     .pricing_tab {
         text-align: center;
@@ -40,90 +41,95 @@
         }
     }
 
-    .pricing_single_section {
-        padding: 0 0 50px;
-        box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.06);
-        text-align: center;
-        text-transform: capitalize;
-        transition: 0.3s;
+    .pricing_container {
+        display: flex;
+        justify-content: space-around;
 
-        &:hover{
-            transform: scale(1.01);
-        }
-
-        .pricing_single_top {
-            background: #f2f6f9;
-            padding: 30px 0;
-
-            h3 {
-                font-size: 18px;
-                margin-bottom: 20px;
-                font-weight: 600;
-            }
-
-            .monthly,
-            .annual {
-                font-size: 35px;
-                font-weight: 600;
-                color: #1d293e;
-                font-family: 'Poppins', sans-serif;
-
-                span {
-                    font-size: 14px;
-                }
-            }
-
-            .annual {
-                display: none;
-            }
-
-            .change_amount .monthly {
-                display: none;
-            }
-
-            .change_amount .annual {
-                display: block;
-            }
-        }
-
-        .pricing_single_list {
-            padding: 25px 0 30px;
-
-            p {
-                margin: 0;
-                padding: 12px 0;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-                &:last-child {
-                    border-bottom: none;
-                }
-            }
-        }
-
-        .pricing_single_button {
+        .pricing_single_section {
+            padding: 0 0 50px;
+            box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.06);
+            text-align: center;
             text-transform: capitalize;
-            border: 2px solid #f54336;
-            font-weight: 600;
-            border-radius: 30px;
-            padding: 10px 30px;
-            display: inline-block;
             transition: 0.3s;
-
-            a {
-                color: #1d293e;
-                text-decoration: none;
-
-            }
+            flex-basis: 31%;
 
             &:hover {
-                border: 2px solid #f54336;
-                background: #f54336;
-                transform: scale(0.98);
-                a {
-                    color: #fff;
+                transform: scale(1.01);
+            }
+
+            .pricing_single_top {
+                background: #f2f6f9;
+                padding: 30px 0;
+
+                h3 {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    font-weight: 600;
+                }
+
+                .monthly,
+                .annual {
+                    font-size: 35px;
+                    font-weight: 600;
+                    color: #1d293e;
+                    font-family: 'Poppins', sans-serif;
+
+                    span {
+                        font-size: 14px;
+                    }
+                }
+
+                .annual {
+                    display: none;
+                }
+
+                .change_amount .monthly {
+                    display: none;
+                }
+
+                .change_amount .annual {
+                    display: block;
                 }
             }
 
+            .pricing_single_list {
+                padding: 25px 0 30px;
+
+                p {
+                    margin: 0;
+                    padding: 12px 0;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            .pricing_single_button {
+                text-transform: capitalize;
+                border: 2px solid #f54336;
+                font-weight: 600;
+                border-radius: 30px;
+                padding: 10px 30px;
+                display: inline-block;
+                transition: 0.3s;
+
+                a {
+                    color: #1d293e;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    border: 2px solid #f54336;
+                    background: #f54336;
+                    transform: scale(0.98);
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
         }
     }
 }
