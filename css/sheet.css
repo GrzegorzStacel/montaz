@@ -1458,6 +1458,7 @@ p {
 
 #testimonial {
   padding-bottom: 80px;
+  margin: 0 10vh;
 }
 
 #testimonial .testimonial_single {
@@ -1497,6 +1498,12 @@ p {
   font-weight: 300;
   font-size: 16px;
   margin-top: 5px;
+}
+
+@media (max-width: 580px) {
+  #testimonial {
+    margin: 0 2vh;
+  }
 }
 
 #blog {
