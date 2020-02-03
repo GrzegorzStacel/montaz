@@ -153,8 +153,6 @@ function paralax() {
 
 
 
-
-
 // --------------------
 //      Animations 
 // --------------------
@@ -288,3 +286,4 @@ ScrollReveal().reveal('.anim_scale', {
     scale: 0.4,
     delay: 300,
 })
+
