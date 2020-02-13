@@ -7,10 +7,11 @@ $(document).ready(function () {
     hamburger_menu();
     paralax();
     top_arrow();
-
+    
 });
 
 function top_arrow() {
+    $('.arrow').hide();
     $('.arrow').on('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 1000, 'linear');
     });
@@ -37,6 +38,7 @@ $(".owl-carousel").owlCarousel({
 function stick_menu() {
     $(window).on('scroll', () => {
         let position = $('html, body').scrollTop();
+        console.log('position: ', position);
 
         if (position > 100) {
             $('nav .stick_container').addClass('sticked').slideDown();
