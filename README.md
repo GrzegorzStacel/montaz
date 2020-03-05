@@ -14,3 +14,19 @@ I did not copy it 1:1 because I did not like some solutions or wanted to practic
 
 The original page can be found at this link:
 [Montaz](http://ekramit.net/tf/montaz-demo/montaz/index.html#blog)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+To jest moja pierwsza strona.
+W ramach treningu skopiowałem ja w ~90% z innej strony.
+Nie kopiowałem jej 1:1 ponieważ pewne rozwiązania nie podobały mi się lub chciałem przećwiczyć inne rozwiązania dlatego wprowadziłem swoje drobne "ulepszenia" między innymi:
+
+1. Zamiast oprzeć rwd na bootstrapie zrobiłem całą responsywność na flexie
+2. Dodałem inne animacje oraz kilka dodatkowych.
+3. Gotowych bibliotek użyłem mniej oraz zaimplementowałem inne:
+    - lightboxes
+    - owlCarusel2
+    - ScrollReveal
+    
+Oryginalna strona znajduje się pod tym linkiem:
+[Montaz](http://ekramit.net/tf/montaz-demo/montaz/index.html#blog)
