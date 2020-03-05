@@ -15,7 +15,7 @@ I did not copy it 1: 1 because I did not like some solutions or wanted to practi
 The original page can be found at this link:
 [Montaz](http://ekramit.net/tf/montaz-demo/montaz/index.html#blog)
 
-My copy of this page can be found [at this link](https://grzegorzstacel.github.io/)
+I made a copy of this page [at this link](https://grzegorzstacel.github.io/)
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -33,4 +33,4 @@ Nie kopiowałem jej 1:1 ponieważ pewne rozwiązania nie podobały mi się lub c
 Oryginalna strona znajduje się pod tym linkiem:
 [Montaz](http://ekramit.net/tf/montaz-demo/montaz/index.html#blog)
 
-Moja kopia tej strony znajduje się [pod tym linkiem](https://grzegorzstacel.github.io/)
+Wykonana przezemnie kopia tej strony znajduje się [pod tym linkiem](https://grzegorzstacel.github.io/)
