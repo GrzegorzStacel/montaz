@@ -4,8 +4,7 @@ This is my 1# first page.
 As part of the training, I copied it in ~ 90% from another site.
 I did not copy it 1: 1 because I did not like some solutions or wanted to practice other techniques, so I introduced my small "improvements" among others:
 
-1. Instead of basing rwd on bootstrap, I did all flex responsiveness
-
+1. The original website was based entirely on bootstrap and I did it with flex as part of the exercises
 2. I added other animations and some additional ones.
 3. I used fewer libraries and implemented other ones:
     - lightboxes
@@ -27,9 +26,10 @@ To jest moja pierwsza strona.
 W ramach treningu skopiowałem ja w ~90% z innej strony.
 Nie kopiowałem jej 1:1 ponieważ pewne rozwiązania nie podobały mi się lub chciałem przećwiczyć inne techniki dlatego wprowadziłem swoje drobne "ulepszenia" między innymi:
 
-1. Zamiast oprzeć rwd na bootstrapie zrobiłem całą responsywność na flexie
+1. Oryginalna strona oparła RWD w całości na bootstrapie a ja w ramach ćwiczeń zrobiłem to za pomocą flex'a
 2. Dodałem inne animacje oraz kilka dodatkowych.
-3. Gotowych bibliotek użyłem mniej oraz zaimplementowałem inne:
+3. Użyłem mniej gotowych bibliotek oraz zaimplementowałem inne:
+
     - lightboxes
     - owlCarusel2
     - ScrollReveal
