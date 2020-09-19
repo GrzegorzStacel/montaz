@@ -12,9 +12,10 @@ I did not copy it 1: 1 because I did not like some solutions or wanted to practi
     - ScrollReveal
 
 The original page can be found at this link:
-[Montaz](http://ekramit.net/tf/montaz-demo/montaz/index.html#blog)
+~~[Montaz]~~
+*The site is no longer available
 
-I made a copy of this page [at this link](https://grzegorzstacel.github.io/)
+I made a copy of this page [at this link](http://provo.webd.pro/montaz/)
 
 Finally, I must add a few words of self-criticism. 
 It was my first real page, I was often inspired by the original code to see how it was possible to create given page elements and not to waste time reinventing the "wheel".
@@ -36,9 +37,10 @@ Nie kopiowałem jej 1:1, ponieważ pewne rozwiązania nie podobały mi się lub 
     - ScrollReveal
     
 Oryginalna strona znajduje się pod tym linkiem:
-[Montaz](http://ekramit.net/tf/montaz-demo/montaz/index.html#blog)
+~~[Montaz]~~
+*Strona nie jest już dostępna
 
-Wykonana przeze mnie kopia tej strony znajduje się [pod tym linkiem](https://grzegorzstacel.github.io/)
+Wykonana przeze mnie kopia tej strony znajduje się [pod tym linkiem](http://provo.webd.pro/montaz/)
 
 Na koniec muszę dodać pare słów samokrytyki. 
 Była to moja pierwsza stronka z prawdziwego zdarzenia, często inspirowałem się kodem pierwowzoru, aby zobaczyć jak można było stworzyć dane elementy strony i nie tracić czasu na wymyślanie "koła" na nowo.
