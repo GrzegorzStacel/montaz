@@ -1,7 +1,7 @@
 # 1# Montaz
 > This is my first website.
-
-> http://provo.webd.pro/montaz/
+>
+> [Montaz](http://provo.webd.pro/montaz/)
 
 ## Table of contents
 * [General info](#general-info)
