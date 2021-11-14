@@ -18,9 +18,9 @@ e.g.
 1. The original website based RWD entirely on bootstrap, and I did it with flex as part of the exercises
 2. I added other animations and some extra ones
 3. I used other libraries:
-	* lightboxes
-    * owlCarusel2
-    * ScrollReveal
+    * [lightboxes](https://lokeshdhakar.com/projects/lightbox/)
+    * [owlCarusel2](https://owlcarousel2.github.io/OwlCarousel2/)
+    * [ScrollReveal](https://scrollrevealjs.org/)
 
 ## Screenshots
 ### 1![First scrennshot](./img_readme/1.png)
